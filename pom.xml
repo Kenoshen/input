@@ -4,7 +4,7 @@
 
     <name>Input</name>
 
-    <groupId>com.bytebreakstudios.gdx</groupId>
+    <groupId>com.bytebreakstudios</groupId>
     <artifactId>input</artifactId>
     <!-- major and minor should match the gdxVersion major and minor -->
     <version>1.6.0</version>

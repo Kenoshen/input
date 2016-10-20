@@ -1,4 +1,4 @@
-package com.bytebreakstudios.gdx.input;
+package com.bytebreakstudios.input;
 
 public interface IInputAware {
     boolean isKeyJustPressed(Key key);
