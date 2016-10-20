@@ -1,8 +1,6 @@
 package com.bytebreakstudios.input;
 
 import com.badlogic.gdx.Gdx;
-import com.bitdecay.blacknickel.trait.IDeserializable;
-import com.bitdecay.blacknickel.trait.ISerializable;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -11,7 +9,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 
-public class MouseState implements ISerializable, IDeserializable {
+public class MouseState implements ISerializable {
 
     private List<MouseButton> down = new ArrayList<>();
 
@@ -37,7 +35,6 @@ public class MouseState implements ISerializable, IDeserializable {
         return down.stream().map(key -> key.code).collect(Collectors.toList()).toString();
     }
 
-    @Override
     public void deserialize(String data) {
         deserialize(Arrays.stream(data.replace("[", "").replace("]", "").replace(" ", "").split(",")).map(Integer::getInteger).collect(Collectors.toList()));
     }

@@ -6,7 +6,7 @@ import java.util.Collection;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class KeyboardState implements ISerializable, IDeserializable {
+public class KeyboardState implements ISerializable {
     private List<Key> down = new ArrayList<>();
 
     public KeyboardState(IInputAware input){
@@ -31,7 +31,6 @@ public class KeyboardState implements ISerializable, IDeserializable {
         return down.stream().map(key -> key.code).collect(Collectors.toList()).toString();
     }
 
-    @Override
     public void deserialize(String data) {
         deserialize(Arrays.stream(data.replace("[", "").replace("]", "").replace(" ", "").split(",")).map(Integer::getInteger).collect(Collectors.toList()));
     }

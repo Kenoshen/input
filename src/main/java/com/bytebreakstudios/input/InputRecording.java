@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
-public class InputRecording implements IInputAware {
+public class InputRecording implements IInputAware, ISerializable {
 
     private final static Logger log = Logger.getLogger(InputRecording.class);
 
