@@ -1,4 +1,4 @@
-package com.bytebreakstudios.input;
+package com.bytebreakstudios.gdx.input;
 
 import com.typesafe.config.Config;
 import org.apache.log4j.Logger;

@@ -1,4 +1,4 @@
-package com.bytebreakstudios.input;
+package com.bytebreakstudios.gdx.input;
 
 import java.util.Arrays;
 import java.util.Collections;
